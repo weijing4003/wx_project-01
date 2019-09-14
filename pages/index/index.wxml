@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<view class="container">
+   <!-- 轮播图 -->
+   <view>
+      <swiper class="swiper-w" indicator-dots="true" autoplay="true" interval="5000" duration="500" >
+      <block wx:for="{{imgUrls}}" wx:key="key">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+   </view>
+
+   <!-- 文案 -->
+   <view class="header">
+      <text class="title">热门电影列表</text>
+      <text class="sub-title">我是热门电影的创始人 我爱电影</text>
+   </view>
+
+   <!-- 电影列表 -->
+   <view class="item">
+      <!-- 正在热映 -->
+      <navigator url="../list/list?type=satinGodApi" hover-class="none">
+        <view class="list">
+            <text>正在出售的电影</text>
+            <text decode="true">&gt;</text>
+        </view>
+      </navigator>
+
+      <!-- 热榜的电影 -->
+      <navigator>
+      
+      </navigator>
+      <view class="list">
+          <text>热榜的电影</text>
+          <text decode="true">&gt;</text>
+      </view>
+      <view class="list">
+        <text>历史的电影</text>
+        <text decode="true">&gt;</text>
+      </view>
+   </view>
+
+</view>

@@ -1,0 +1,17 @@
+<!--pages/list/list.wxml-->
+<view>
+  <block wx:for="{{ list }}" wx:key="key">
+    <view class="show-list">
+        
+    </view>
+
+    <view>
+      {{item.username}}
+    </view>
+    <view>
+      {{item.text}}
+    </view>
+  
+  </block>
+
+</view>

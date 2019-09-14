@@ -1,0 +1,40 @@
+/**index.wxss**/
+.swiper-w {
+  width: 750rpx;
+  height: 400rpx;
+}
+.slide-image{
+  width: 100%;
+}
+.header {  
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+}
+
+.header .title{
+  color: #333;
+  font-size: 40rpx;
+}
+.header .sub-title{
+  color: #999;
+  font-size: 30rpx;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+}
+.item .list {
+  margin-bottom: 20rpx;
+  padding: 0 20rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #eee;
+  border: 4px solid #dedede;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
